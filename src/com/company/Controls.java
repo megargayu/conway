@@ -75,7 +75,7 @@ public class Controls extends JPanel {
         public ScheduledExecutorService player;
         private boolean playing = false;
         public PlayBtn() {
-            super(new ImageIcon(PlayBtn.class.getResource("media/Play.png")));
+            super(new ImageIcon(PlayBtn.class.getResource("Media/Play.png")));
             addActionListener(e -> toggle());
         }
 
@@ -105,7 +105,7 @@ public class Controls extends JPanel {
         }
 
         private void toggleIcon() {
-            changeIcon(new ImageIcon(PlayBtn.class.getResource((!playing) ? "media/Stop.png" : "media/Play.png")));
+            changeIcon(new ImageIcon(PlayBtn.class.getResource((!playing) ? "Media/Stop.png" : "Media/Play.png")));
         }
     }
     private class DrawBtn extends ToolBtn {
@@ -114,7 +114,7 @@ public class Controls extends JPanel {
         private Point lastPoint;
 
         public DrawBtn() {
-            super(new ImageIcon(DrawBtn.class.getResource("media/Pencil.png")));
+            super(new ImageIcon(DrawBtn.class.getResource("Media/Pencil.png")));
         }
 
         @Override
@@ -173,7 +173,7 @@ public class Controls extends JPanel {
         private Point2D.Double lastLoc;
 
         public MoveBtn() {
-            super(new ImageIcon(MoveBtn.class.getResource("media/Drag.png")));
+            super(new ImageIcon(MoveBtn.class.getResource("Media/Drag.png")));
             lastLoc = new Point2D.Double(Main.grid.locX, Main.grid.locY);
         }
 
@@ -205,7 +205,7 @@ public class Controls extends JPanel {
     }
     private class SelectBtn extends ToolBtn {
         public SelectBtn() {
-            super(new ImageIcon(MoveBtn.class.getResource("media/Select.png")));
+            super(new ImageIcon(MoveBtn.class.getResource("Media/Select.png")));
         }
 
         @Override
